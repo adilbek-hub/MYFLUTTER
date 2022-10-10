@@ -1,0 +1,2 @@
+//Snippet atkaryldy
+//static
