@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Weather? data;
 
   Future<void> getData() async {
-    data = await client.getCurrentWeather('kiev');
+    data = await client.getCurrentWeather('paris');
   }
 
   @override
