@@ -35,21 +35,27 @@ class _HomePageState extends State<HomePage> {
       permission = await Geolocator.requestPermission();
       //колдонуучу кайта уруксат бербей койсо
       if (permission == LocationPermission.always &&
+          // колдонуучу тараптан мурда уруксат берилген болсо
           permission == LocationPermission.whileInUse) {
         //анда Бишкекти кайтадан көрсөтүп кой
         await fetchData();
       }
+    } else {
+      // анда локациясын ал
+      Position position = await Geolocator.getCurrentPosition();
+      await fetchData(
+          APIConst.latLongaddres(position.latitude, position.longitude));
     }
   }
 
   // fetchData degen funksiabyz bar
-  Future<Weather?> fetchData() async {
+  Future<Weather?> fetchData(String? url) async {
     // bul funksiany srazy ishtetpey 4 sekundtan kiyin ishtet
-    await Future.delayed(const Duration(seconds: 1));
+    await Future.delayed(const Duration(seconds: 0));
     // dio bul paket, bekend server menen bizdi baylanyshtyryp beret
     final dio = Dio();
     //get bul dionun metodu. datalarga, addresterge baryp biz bergen datalardy alyp kelet
-    final res = await dio.get(APIConst.address);
+    final res = await dio.get(url ?? APIConst.address);
     // 200 бул ийгиликтүү суроо талап бар деген нерсе
     if (res.statusCode == 200) {
       // eger statusCode iygiliktuu kelse weatherdegi tandalgan list,index,obektterdi kaytar ( return weather;)

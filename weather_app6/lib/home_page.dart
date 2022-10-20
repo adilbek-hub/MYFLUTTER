@@ -39,7 +39,7 @@ class MyHomePage extends StatelessWidget {
                     gradient: const LinearGradient(
                         colors: [
                           Color.fromARGB(255, 236, 143, 232),
-                          Color.fromARGB(255, 121, 212, 240)
+                          Color.fromARGB(255, 121, 212, 240),
                         ],
                         begin: Alignment.bottomCenter,
                         end: Alignment.topCenter,
@@ -66,10 +66,6 @@ class MyHomePage extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
-                    // Image.asset(
-                    //   'assets/images/Sunny.png',
-                    //   width: size.width * 0.3,
-                    // ),
                     Image.network(
                       'http:${data?.icon}',
                       width: size.width * 0.36,

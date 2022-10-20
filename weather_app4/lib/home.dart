@@ -32,6 +32,7 @@ const List cities = <String>[
 /* Иштеп чыгуу үчүн INTERNET уруксаты талап кылынат. Тактап айтканда,
 Flutter куралы иштеп жаткан колдонмо менен байланышуу үчүн керек
 токтотуу чекиттерин орнотууга уруксат берүү, ысык кайра жүктөө ж.б.
+бул интернетти кошкондон кийин терминалга flutter clean анан flutter pub get анан flutter build apk
 <uses-permission android:name="android.permission.INTERNET"/>*/
 
 //agayga suroo
