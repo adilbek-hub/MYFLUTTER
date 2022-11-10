@@ -1,6 +1,18 @@
 import 'package:counter_with_getx/app.dart';
 import 'package:flutter/material.dart';
 
+/*
+State Management
+1: kereksiz ui lardy kaira kurba
+2: widget daraktaryna kaalagan jerine datany jetkirip beret
+3: logic kodtordu ui kodtordon bolup aluu
+*/
+
+/*
+Getx [MVC] -> model-view-controller (web)
+Mobx [MVVM] -> model-voiew-view-model (mobile)
+Bloc [Bloc pattern] -> okuibuz
+*/
 void main() {
   runApp(const MyApp());
 }
@@ -20,5 +32,7 @@ void main() {
 // STATE MANAGERТИН ДАГЫ БИР ӨЗГӨЧӨЛҮГҮН КӨРӨЛҮ
 // 8. БИРИНЧИ ПЕЙДЖТЕГИ ӨЗГӨРМӨ ӨЗГӨРҮЛГӨНДӨ ЭКИНЧИ ПЕЙДЖТЕ ДА ӨЗГӨРМӨ ӨЗГӨРҮЛСҮН. МИСАЛЫ 1 П 10 => 2 П 10
 // 8.1 Экинчи бет файл создавай.
-// 8.2. Экинчи бетте degrement Button ал эми биринчи бетте ingement Button болсун. 
-
+// 8.2. Экинчи бетте degrement Button ал эми биринчи бетте ingement Button болсун.
+// 8.3.  
+// Аргумент жана параметр деген эмне.
+// 

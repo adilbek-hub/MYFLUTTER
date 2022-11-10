@@ -58,7 +58,7 @@ class _MyHomeViewState extends State<MyHomeView> {
                         flex: 3,
                         child: Image.network(news.urlToImage ?? News.newsImage),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Expanded(

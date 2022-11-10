@@ -32,10 +32,10 @@ class NewsCard extends StatelessWidget {
                 flex: 3,
                 // child: Image.network(news.urlToImage ?? News.newsImage),
                 child: CachedNetworkImage(
-                  imageUrl: news.urlToImage ?? News.newsImage,
+                  imageUrl: news.urlToImage ?? ApiConst.sourchNews,
                   placeholder: (context, url) =>
                       Image.asset('assets/newsImageForUnknown.png'),
-                  errorWidget: (context, url, error) =>
+                  errorWidget: (context, url, e) =>
                       Image.asset('assets/Errors-01.png'),
                   fit: BoxFit.fitWidth,
                 ),

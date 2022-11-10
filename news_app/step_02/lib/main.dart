@@ -8,7 +8,7 @@ import 'package:step_02/app/app.dart';
 // 3 Дата, NPoint, Линк, Свет, Текстовый стиль жана башка үчүн папкаларды файлдарды даярдоо
 // 4 NewsAPIга модель түзөбүз
 // БИЗ ӨЗҮБҮЗГӨ КЕРЕКТҮҮ ПАПКАЛАРДЫ ДАЯРДАП АЛДЫК. ЭМИ ДАРТ ФАБРИКА МЕНЕН ИШТЕП КӨРӨЛҮ. БУГА ДАРТ КОД МЕНЕН ИШТЕП АЛАБЫЗ. => factory_metod step 01
-// 5. source, Article, TopNews modeline factory tuzobuz. Ал model папкасында
+// 5. source, Article, TopNews modeliне factory tuzobuz. Ал model папкасында
 // 6. ApiKeyибизди жайгаштырып алабыз ал  constants папкасындагы api_constants.dart файлында.
 // 7. Интернеттеги маалыматтарды алып келүүчү сервис жазайбыз. Ал fetch_service.dart файлында
 // 8. fetch_service.dart файлындагы class TopNewsRepoнун ичиндеги future fetchTopNews функциясын home_view.dart файлындагы
@@ -16,7 +16,8 @@ import 'package:step_02/app/app.dart';
 // 8.1 null боло ала турган TopNews? topNews болсун.
 // 8.2 Future асинхронный метод болсун. Асинхронный методдун ичине TopNewsRepo().fetchTopNews(); ну topNews га барабарла.
 // 8.3 Барабарлагандан кийин setState кылып кой.
-// ЭМИ HOME_VIEW ДА ДИЗАЙН МЕНЕН ИШТЕЙБИЗ
+// 8.4 setState тен кийин initStateге  fetchNews() функцияны байлап кой. 
+// 9. ЭМИ HOME_VIEW ДА ДИЗАЙН МЕНЕН ИШТЕЙБИЗ.
 
 void main() {
   runApp(const MyApp());

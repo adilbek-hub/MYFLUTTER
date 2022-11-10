@@ -53,6 +53,7 @@
   		<string>sms</string>
  		 <string>tel</string>
 		  <string>https</string>
+	
 	</array>
 </dict>
 </plist>

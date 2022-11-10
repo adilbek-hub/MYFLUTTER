@@ -11,6 +11,8 @@ import 'package:step_03/theme/colors.dart';
 import 'package:step_03/theme/text_style.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../components/read_more_Ebutton.dart';
+
 class NewsDetailPage extends StatelessWidget {
   const NewsDetailPage({super.key, required this.article});
   final Article article;
@@ -45,34 +47,32 @@ class NewsDetailPage extends StatelessWidget {
           ),
           // Image.network(article.urlToImage ?? ApiConst.sourchNews),
           CachedNetworkImage(
-            imageUrl: article.urlToImage ?? News.newsImage,
+            imageUrl: article.urlToImage ?? ApiConst.sourchNews,
             placeholder: (context, url) =>
                 Image.asset('assets/newsImageForUnknown.png'),
-            errorWidget: (context, url, error) =>
+            errorWidget: (context, url, e) =>
                 Image.asset('assets/Errors-01.png'),
             fit: BoxFit.fitWidth,
           ),
-          SizedBox(
-            height: 15,
+          const SizedBox(
+            height: 10,
           ),
           Text(
-            article.description ?? 'No Description',
-            style: AppTextStyle.detailDescription,
+            article.description ?? 'Not Text',
             textAlign: TextAlign.center,
+            style: AppTextStyle.detailDescription,
           ),
           SizedBox(
-            height: 15,
+            height: 10,
           ),
-          article.url != null
-              ? ReadMoreButton(
-                  onPressed: () async {
-                    final uri = Uri.parse(article.url!);
-                    if (await canLaunchUrl(uri)) {
-                      await launchUrl(uri);
-                    }
-                  },
-                )
-              : const SizedBox(),
+          ReadMoreButton(
+            onPressed: () async {
+              final uri = Uri.parse(article.url!);
+              if (await canLaunchUrl(uri)) {
+                await launchUrl(uri);
+              }
+            },
+          ),
         ],
       ),
     );

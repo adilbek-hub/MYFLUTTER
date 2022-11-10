@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.step_03">
+      <!-- All packages -->
+    <!-- <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" /> -->
       <!-- url_launch -->
 <queries>
   <!-- If your app checks for SMS support -->
