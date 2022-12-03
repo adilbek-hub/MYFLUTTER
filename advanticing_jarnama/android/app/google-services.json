@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "646353721073",
+    "project_id": "jarnama-example-b4eee",
+    "storage_bucket": "jarnama-example-b4eee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646353721073:android:6d5226a53b4bf31a2dfb50",
+        "android_client_info": {
+          "package_name": "com.example.advanticing_jarnama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646353721073-peo7vc3l9d2d48fndvqueell8ki7rorp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVNqf8q3hTPqrqMD-07RAleZp9GLVprkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646353721073-peo7vc3l9d2d48fndvqueell8ki7rorp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "646353721073-ofupgdotr3a98mr6ap0idiaa9vfcdadn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.jarnama"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646353721073:android:33c5906905098e522dfb50",
+        "android_client_info": {
+          "package_name": "com.example.jarnama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646353721073-peo7vc3l9d2d48fndvqueell8ki7rorp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVNqf8q3hTPqrqMD-07RAleZp9GLVprkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646353721073-peo7vc3l9d2d48fndvqueell8ki7rorp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "646353721073-ofupgdotr3a98mr6ap0idiaa9vfcdadn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.jarnama"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

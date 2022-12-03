@@ -41,11 +41,11 @@ class _TryCatchPageState extends State<TryCatchPage> {
                     // болбой калса
                     showAboutDialog(
                         context: context,
-                        applicationName: 'Сиз санда тамга кошулган');
+                        applicationName: 'Сиздин санда тамга кошулган');
                     print('$e');
                   }
                 }),
-                child: Text('+')),
+                child: const Text('+')),
           ],
         ),
       ),
