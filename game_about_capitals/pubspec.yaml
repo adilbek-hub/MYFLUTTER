@@ -63,7 +63,7 @@ flutter:
     - assets/icons/continents/
     - assets/icons/texi_page_icons/
     - assets/images/about_countries/
-    - assets/images/capitals
+    - assets/images/capitals/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

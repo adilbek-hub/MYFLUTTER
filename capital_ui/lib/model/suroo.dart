@@ -13,7 +13,7 @@ class Joop {
 
 List<Suroo> europeQuestion = [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10];
 const s1 = Suroo(
-    text: 'Parice',
+    text: 'Paris',
     jooptor: [
       Joop(text: 'Germany'),
       Joop(text: 'France', isTrue: true),
